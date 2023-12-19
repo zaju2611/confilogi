@@ -5,7 +5,7 @@ export default function Cart({ data }) {
 			<img className="cartImage" src={data.image} alt={data.description} />
 			<h3 className="cartTitle">Add to {data.text}</h3>
 			<p className="text cartText">Minimum version {data.version}</p>
-			<img src={dots} alt="dots" />
+			<img className="dots" src={dots} alt="dots" />
 			<button className="cartButton">Add & Install Extension</button>
 		</div>
 	);

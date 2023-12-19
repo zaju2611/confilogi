@@ -2,7 +2,7 @@ import Options from "./Options";
 
 export default function FeaturesSection() {
 	return (
-		<div>
+		<div className="feature">
 			<h2>Features</h2>
 			<p className="text">
 				{" "}

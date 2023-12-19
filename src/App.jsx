@@ -19,7 +19,7 @@ export default function App() {
 	useEffect(() => {
 		const timeoutId = setTimeout(() => {
 			openModal();
-		}, 3000);
+		}, 1);
 
 		return () => {
 			clearTimeout(timeoutId);
