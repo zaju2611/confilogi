@@ -378,7 +378,6 @@ h2 {
 }
 
 .footerLogo {
-	width: 40%;
 	margin: 40px 0 25px 0;
 }
 
@@ -958,11 +957,14 @@ button:hover {
 	.footerContainer {
 		display: flex;
 		flex-direction: row;
+		justify-content: flex-start;
+		margin-left: 50px;
 	}
 
 	.socials {
 		width: 15%;
 		margin: 0;
+		margin-right: 50px;
 	}
 
 	.modal > .options > .optionContainer > .active::after {
