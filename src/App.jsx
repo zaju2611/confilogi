@@ -16,10 +16,14 @@ export default function App() {
 	const openModal = () => setModalOpen(true);
 	const closeModal = () => setModalOpen(false);
 
+	const handleMouseEnter = () => {
+		openModal();
+	};
+
 	useEffect(() => {
 		const timeoutId = setTimeout(() => {
 			openModal();
-		}, 1);
+		}, 30000);
 
 		return () => {
 			clearTimeout(timeoutId);
@@ -30,7 +34,7 @@ export default function App() {
 		<>
 			<div className="wrapper">
 				<Nav />
-				<HeaderSection />
+				<HeaderSection openModal={handleMouseEnter} />
 				<FeaturesSection />
 				<OneClickSection />
 				<ExtensionSection />

@@ -34,9 +34,9 @@ export default function QuestionsSection() {
 			<p className="text">
 				{" "}
 				Here are some of our FAQs. If you have any other questions you'd like
-				answered please feel free to email us{" "}
+				answered please feel free to email us.{" "}
 			</p>
-			<Accordion  items={items} />
+			<Accordion items={items} />
 			<button className="questionButton">More Info</button>
 		</div>
 	);

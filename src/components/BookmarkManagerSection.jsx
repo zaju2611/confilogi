@@ -4,7 +4,7 @@ export default function BookmarkManagerSection() {
 			<h1 className="title">A simple Bookmark Manager</h1>
 			<p className="text">
 				A clean and simple interface to organize your favourite websites. Open a
-				new browser tab and see your sites load instantly. Try it for free
+				new browser tab and see your sites load instantly. Try it for free.
 			</p>
 			<div className="buttonSection">
 				<button>Get it on Chrome</button>
