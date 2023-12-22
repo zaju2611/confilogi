@@ -1,7 +1,7 @@
 import Chrome from "../assets/images/logo-chrome.svg";
 import Firefox from "../assets/images/logo-firefox.svg";
 import Opera from "../assets/images/logo-opera.svg";
-import Cart from "./Cart";
+import Card from "./Card";
 export default function ExtensionSection() {
 	const data = [
 		{
@@ -19,7 +19,7 @@ export default function ExtensionSection() {
 		{ image: Opera, description: "Opera logo", text: "Opera", version: "46" },
 	];
 
-	const cards = data.map((item, index) => <Cart key={index} data={item} />);
+	const cards = data.map((item, index) => <Card key={index} data={item} />);
 
 	return (
 		<div className="extension">
