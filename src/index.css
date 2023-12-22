@@ -6,6 +6,13 @@
 	padding: 0;
 }
 
+:root {
+	--light-blue: hsl(231, 69%, 60%);
+	--light-red: hsl(0, 94%, 66%);
+	--grey: hsl(229, 8%, 60%);
+	--dark-blue: hsl(229, 31%, 21%);
+}
+
 html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
@@ -15,7 +22,7 @@ body {
 	position: relative;
 	font-family: "Rajdhani", sans-serif;
 	min-height: 100vh;
-	font-size: 1.5rem;
+	font-size: 1.8rem;
 	font-family: "Rubik", sans-serif;
 }
 
@@ -50,7 +57,7 @@ body {
 	width: 100%;
 	max-width: 1000px;
 	height: 185px;
-	background-color: hsl(231, 69%, 60%);
+	background-color: var(--light-blue);
 	border-bottom-left-radius: 75px;
 	z-index: 1;
 }
@@ -72,10 +79,11 @@ body {
 }
 
 .text {
-	color: hsl(229, 8%, 60%);
+	color: var(--grey);
 	text-align: center;
 	margin: 20px 0;
 	line-height: 2rem;
+	font-size: 1.5rem;
 }
 
 button {
@@ -84,8 +92,8 @@ button {
 	align-items: center;
 	padding: 10px;
 	width: 48%;
-	border: 3px solid hsl(231, 69%, 60%);
-	background-color: hsl(231, 69%, 60%);
+	border: 3px solid var(--light-blue);
+	background-color: var(--light-blue);
 	border-radius: 5px;
 	font-family: "Rubik", sans-serif;
 	margin: 10px 0;
@@ -104,7 +112,7 @@ button {
 }
 
 .greyButton:hover {
-	color: hsl(229, 8%, 60%);
+	color: var(--grey);
 }
 
 .buttonSection {
@@ -116,7 +124,7 @@ button {
 h2 {
 	text-align: center;
 	margin: 30px 10px 10px 10px;
-	font-size: 2.1rem;
+	font-size: 2rem;
 }
 
 .option {
@@ -127,6 +135,7 @@ h2 {
 	font-size: 1.5rem;
 	width: 100%;
 	cursor: pointer;
+	font-size: 1.4rem;
 }
 .optionContainer {
 	width: 100%;
@@ -139,7 +148,7 @@ h2 {
 	width: 100%;
 }
 .options:last-child {
-	border-bottom: 1px solid hsl(229, 8%, 60%);
+	border-bottom: 1px solid var(--grey);
 }
 
 .flex-column {
@@ -148,11 +157,11 @@ h2 {
 }
 
 .options.flex-column .option {
-	border-top: 1px solid hsl(229, 8%, 60%);
+	border-top: 1px solid var(--grey);
 }
 
 .options.flex-row .option {
-	border-bottom: 1px solid hsl(229, 8%, 60%);
+	border-bottom: 1px solid var(--grey);
 }
 
 .flex-row {
@@ -167,7 +176,7 @@ h2 {
 	left: 30%;
 	width: 40%;
 	height: 4px;
-	background-color: hsl(0, 94%, 66%);
+	background-color: var(--light-red);
 }
 
 .rotated {
@@ -221,7 +230,7 @@ h2 {
 	cursor: pointer;
 	width: 100%;
 	padding: 15px 0;
-	border-bottom: 1px solid hsl(229, 8%, 60%);
+	border-bottom: 1px solid var(--grey);
 }
 
 .expanded {
@@ -233,7 +242,7 @@ h2 {
 	padding-top: 20px;
 	line-height: 2.5rem;
 	padding-bottom: 20px;
-	border-bottom: 1px solid hsl(229, 8%, 60%);
+	border-bottom: 1px solid var(--grey);
 }
 .questionButton {
 	width: 30%;
@@ -242,13 +251,13 @@ h2 {
 }
 
 .accordionIcon {
-	color: hsl(231, 69%, 60%);
+	color: var(--light-blue);
 	font-size: 3rem;
 	font-weight: bold;
 }
 
 .accordionBox:first-child {
-	border-top: 1px solid hsl(229, 8%, 60%);
+	border-top: 1px solid var(--grey);
 }
 
 .accordionIcon {
@@ -271,7 +280,7 @@ h2 {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background-color: hsl(231, 69%, 60%);
+	background-color: var(--light-blue);
 	color: white;
 }
 
@@ -330,12 +339,12 @@ h2 {
 }
 
 .errorInput {
-	border: 3px solid hsl(0, 94%, 66%);
+	border: 3px solid var(--light-red);
 	height: 100%;
 }
 
 .error {
-	background-color: hsl(0, 94%, 66%);
+	background-color: var(--light-red);
 	color: white;
 	font-style: italic;
 	font-size: 1rem;
@@ -348,7 +357,7 @@ h2 {
 
 .newsBtn {
 	width: 300px;
-	background-color: hsl(0, 94%, 66%);
+	background-color: var(--light-red);
 	margin-top: 15px;
 	margin-bottom: 50px;
 }
@@ -358,7 +367,7 @@ h2 {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background-color: hsl(229, 31%, 21%);
+	background-color: var(--dark-blue);
 	color: white;
 }
 
@@ -528,7 +537,7 @@ h2 {
 }
 
 .up {
-	color: hsl(0, 94%, 66%);
+	color: var(--light-red);
 }
 
 .menuContainer {
@@ -569,7 +578,7 @@ h2 {
 }
 
 .menuOption {
-	border-top: 0.5px solid hsl(229, 8%, 60%);
+	border-top: 0.5px solid var(--grey);
 	width: 100%;
 	text-align: center;
 	color: white;
@@ -579,7 +588,7 @@ h2 {
 }
 
 .menuOption:nth-of-type(3) {
-	border-bottom: 1px solid hsl(229, 8%, 60%);
+	border-bottom: 1px solid var(--grey);
 	margin-bottom: 20px;
 }
 
@@ -626,19 +635,19 @@ h2 {
 .cartButton:hover,
 button:hover {
 	background-color: white;
-	color: hsl(231, 69%, 60%);
+	color: var(--light-blue);
 }
 
 .option:hover {
-	color: hsl(0, 94%, 66%);
+	color: var(--light-red);
 }
 
 .newsBtn:hover {
-	color: hsl(0, 94%, 66%);
+	color: var(--light-red);
 }
 
 .footerLink:hover {
-	color: hsl(0, 94%, 66%);
+	color: var(--light-red);
 }
 
 .bookmarkSectionText > button {
@@ -659,7 +668,7 @@ button:hover {
 }
 
 .socialLogo:hover path {
-	fill: hsl(0, 94%, 66%);
+	fill: var(--light-red);
 }
 
 .footerLogo g path {
@@ -672,9 +681,8 @@ button:hover {
 }
 
 .mobileMenuLogo > g g path {
-	fill: hsl(229, 31%, 21%);
+	fill: var(--dark-blue);
 }
-
 
 @media (min-width: 1000px) {
 	.wrapper {
@@ -697,14 +705,14 @@ button:hover {
 		width: 25%;
 		min-width: 100px;
 		padding: 10px;
-		background-color: hsl(0, 94%, 66%);
-		border: 3px solid hsl(0, 94%, 66%);
+		background-color: var(--light-red);
+		border: 3px solid var(--light-red);
 		transition: backgroundColor 0.3s, color 0.3s;
 	}
 
 	.desktopNavBtn:hover {
 		background-color: white;
-		color: hsl(0, 94%, 66%);
+		color: var(--light-red);
 	}
 
 	.desktopNavEl {
@@ -713,7 +721,7 @@ button:hover {
 	}
 
 	.desktopNavEl:hover {
-		color: hsl(0, 94%, 66%);
+		color: var(--light-red);
 	}
 
 	.headerSection {
@@ -871,9 +879,7 @@ button:hover {
 		margin-top: 50px;
 		height: 450px;
 	}
-	.cart {
-		height: 300px;
-	}
+
 	.cart:nth-child(1) {
 		align-self: flex-start;
 	}
@@ -886,7 +892,7 @@ button:hover {
 
 	.cartButton {
 		margin-right: 0;
-		border: 3px solid hsl(231, 69%, 60%);
+		border: 3px solid var(--light-blue);
 		max-width: 500px;
 		transition: background-color 0.3s, color 0.3s;
 	}
@@ -908,7 +914,7 @@ button:hover {
 
 	.newsBtn {
 		margin: 0;
-		border: 3px solid hsl(0, 94%, 66%);
+		border: 3px solid var(--light-red);
 		transition: color 0.3s;
 		margin-left: 10px;
 		min-width: 100px;
