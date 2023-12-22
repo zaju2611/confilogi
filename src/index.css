@@ -297,6 +297,7 @@ h2 {
 	align-items: center;
 	letter-spacing: 0.3rem;
 	margin-top: 50px;
+	font-size: 1.2rem;
 }
 
 .form {
@@ -363,6 +364,7 @@ h2 {
 
 .newsBtn {
 	width: 300px;
+	border: 3px solid var(--light-red);
 	background-color: var(--light-red);
 	margin-top: 15px;
 	margin-bottom: 50px;
@@ -375,6 +377,7 @@ h2 {
 	flex-direction: column;
 	background-color: var(--dark-blue);
 	color: white;
+	letter-spacing: 0.2rem;
 }
 
 .footerLogo {
@@ -385,6 +388,8 @@ h2 {
 	margin: 15px;
 	cursor: pointer;
 	transition: color 0.3s;
+	color: var(--grey);
+	font-size: 1.5rem;
 }
 
 .socials {
@@ -919,7 +924,7 @@ button:hover {
 
 	.newsBtn {
 		margin: 0;
-		border: 3px solid var(--light-red);
+
 		transition: color 0.3s;
 		margin-left: 10px;
 		min-width: 100px;
