@@ -79,6 +79,9 @@ body {
 }
 
 button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	padding: 10px;
 	width: 48%;
 	border: 3px solid hsl(231, 69%, 60%);
@@ -95,8 +98,8 @@ button {
 }
 
 .greyButton {
-	border: 3px solid hsl(229, 8%, 60%);
-	background-color: hsl(229, 8%, 60%);
+	border: 3px solid hsl(229, 8%, 90%);
+	background-color: hsl(229, 8%, 90%);
 	color: black;
 }
 
@@ -106,7 +109,8 @@ button {
 
 .buttonSection {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
+	gap: 10px;
 }
 
 h2 {
@@ -122,6 +126,7 @@ h2 {
 	color: hsl(229, 8%, 40%);
 	font-size: 1.5rem;
 	width: 100%;
+	cursor: pointer;
 }
 .optionContainer {
 	width: 100%;
@@ -252,10 +257,6 @@ h2 {
 	align-items: center;
 }
 
-.extension {
-	margin-top: 100px;
-}
-
 .questions {
 	display: flex;
 	justify-content: center;
@@ -368,6 +369,8 @@ h2 {
 
 .footerLink {
 	margin: 15px;
+	cursor: pointer;
+	transition: color 0.3s;
 }
 
 .socials {
@@ -606,6 +609,19 @@ button:hover {
 	color: hsl(0, 94%, 66%);
 }
 
+.bookmarkSectionText > button {
+	display: none;
+}
+
+.extension {
+	margin-top: 100px;
+}
+
+.burgerBtn,
+.closeMenu {
+	cursor: pointer;
+}
+
 /* ------------------------------------------------------------------- */
 @media (min-width: 1000px) {
 	.wrapper {
@@ -733,7 +749,7 @@ button:hover {
 
 	.option {
 		margin-bottom: 10px;
-		cursor: pointer;
+
 		transition: color 0.3s;
 	}
 
@@ -762,6 +778,7 @@ button:hover {
 	}
 
 	.bookmarkSectionText > button {
+		display: flex;
 		width: 20%;
 		min-width: 100px;
 		max-width: 125px;
@@ -790,7 +807,6 @@ button:hover {
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
-		margin-top: 200px;
 	}
 
 	.extension > .text {
@@ -843,8 +859,8 @@ button:hover {
 		border: 3px solid hsl(0, 94%, 66%);
 		transition: color 0.3s;
 		margin-left: 10px;
-		min-width: 75px;
-		max-width: 100px;
+		min-width: 100px;
+		max-width: 120px;
 	}
 
 	.counter {
@@ -873,8 +889,6 @@ button:hover {
 		justify-content: center;
 		align-items: center;
 		margin: 0px 25px;
-		cursor: pointer;
-		transition: color 0.3s;
 	}
 
 	.footerContainer {
