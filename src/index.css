@@ -654,7 +654,28 @@ button:hover {
 	cursor: pointer;
 }
 
-/* ------------------------------------------------------------------- */
+.socialLogo path {
+	transition: fill 0.3s;
+}
+
+.socialLogo:hover path {
+	fill: hsl(0, 94%, 66%);
+}
+
+.footerLogo g path {
+	fill: white;
+}
+
+.mobileMenuLogo g path,
+.mobileMenuLogo g circle {
+	fill: white;
+}
+
+.mobileMenuLogo > g g path {
+	fill: hsl(229, 31%, 21%);
+}
+
+
 @media (min-width: 1000px) {
 	.wrapper {
 		padding: 40px 90px;
@@ -911,10 +932,10 @@ button:hover {
 
 	.footerLogo {
 		margin: 0;
-
 		max-width: 150px;
 		margin: 0px 40px;
 	}
+
 	.footerLink {
 		display: flex;
 		justify-content: center;
