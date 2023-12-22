@@ -28,7 +28,7 @@ export default function ExtensionSection() {
 				We've goto more browsers in the pipeline. Please do let us know if
 				you've got a favourite you'd like us to prioritize.
 			</p>
-			{cards}
+			<div className="cardsContainer">{cards}</div>
 		</div>
 	);
 }

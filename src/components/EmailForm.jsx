@@ -11,26 +11,31 @@ export default function App() {
 
 	return (
 		<form className="form" onSubmit={handleSubmit(onSubmit)}>
-			<div className={`formDiv ${errors.Email ? "errorInput" : ""}`}>
-				<input
-					className="input"
-					type="email"
-					placeholder="Enter your email address"
-					{...register("Email", {
-						required: "Email is required",
-						pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-					})}
-				/>
-				{errors.Email && <img className="errorImage" src={Error} alt="Error" />}
+			<div className="inputContainer">
+				<div className={`formDiv ${errors.Email ? "errorInput" : ""}`}>
+					<input
+						className="input"
+						type="email"
+						placeholder="Enter your email address"
+						{...register("Email", {
+							required: "Email is required",
+							pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+						})}
+					/>
+					{errors.Email && (
+						<img className="errorImage" src={Error} alt="Error" />
+					)}
+				</div>
+
+				{errors.Email && (
+					<p className="error">
+						{errors.Email.type === "required"
+							? "Email is required"
+							: "Whoops, make sure it's an email"}
+					</p>
+				)}
 			</div>
 
-			{errors.Email && (
-				<p className="error">
-					{errors.Email.type === "required"
-						? "Email is required"
-						: "Whoops, make sure it's an email"}
-				</p>
-			)}
 			<button className="newsBtn" type="submit">
 				Contact Us
 			</button>

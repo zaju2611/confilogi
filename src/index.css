@@ -22,7 +22,7 @@ body {
 .wrapper {
 	margin: 0 auto;
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1440px;
 	padding: 40px;
 	overflow: hidden;
 }
@@ -37,16 +37,18 @@ body {
 	position: relative;
 	height: 300px;
 	margin: 10px;
+	margin-top: 30px;
 	width: 100%;
+	margin-bottom: 80px;
 }
 
 .backgroundElement {
 	position: absolute;
-	top: 60%;
-	left: 70%;
+	top: 65%;
+	left: 80%;
 	transform: translate(-50%, -50%);
 	width: 100%;
-	max-width: 600px;
+	max-width: 1000px;
 	height: 185px;
 	background-color: hsl(231, 69%, 60%);
 	border-bottom-left-radius: 75px;
@@ -77,9 +79,9 @@ body {
 }
 
 button {
-	padding: 15px;
+	padding: 10px;
 	width: 48%;
-	border: none;
+	border: 3px solid hsl(231, 69%, 60%);
 	background-color: hsl(231, 69%, 60%);
 	border-radius: 5px;
 	font-family: "Rubik", sans-serif;
@@ -87,16 +89,24 @@ button {
 	color: white;
 	cursor: pointer;
 	font-size: 1.3rem;
+	max-width: 300px;
+	min-width: 140px;
+	transition: background-color 0.3s, color 0.3s;
 }
 
 .greyButton {
-	background-color: hsl(229, 8%, 85%);
+	border: 3px solid hsl(229, 8%, 60%);
+	background-color: hsl(229, 8%, 60%);
 	color: black;
+}
+
+.greyButton:hover {
+	color: hsl(229, 8%, 60%);
 }
 
 .buttonSection {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 }
 
 h2 {
@@ -156,7 +166,9 @@ h2 {
 }
 
 .rotated {
-	left: 30%;
+	top: 75%;
+	left: 10%;
+	width: 150%;
 	border-bottom-left-radius: 0;
 	border-bottom-right-radius: 75px;
 }
@@ -170,6 +182,7 @@ h2 {
 	box-shadow: 0 2px 20px -2px hsl(229, 8%, 90%);
 	margin: 20px;
 	overflow: hidden;
+	max-width: 250px;
 }
 
 .cartImage {
@@ -229,6 +242,16 @@ h2 {
 	font-weight: bold;
 }
 
+.accordionBox:first-child {
+	border-top: 1px solid hsl(229, 8%, 60%);
+}
+
+.accordionIcon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .extension {
 	margin-top: 100px;
 }
@@ -261,6 +284,10 @@ h2 {
 }
 
 .form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	padding: 30px;
 	width: 100%;
 }
@@ -271,7 +298,7 @@ h2 {
 	border: none;
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
-	font-size: 1.5rem;
+	font-size: 1.6rem;
 	padding-left: 20px;
 }
 
@@ -289,7 +316,7 @@ h2 {
 }
 
 .formDiv {
-	width: 100%;
+	width: 300px;
 	background-color: white;
 	border-radius: 5px;
 }
@@ -319,7 +346,7 @@ h2 {
 }
 
 .newsBtn {
-	width: 100%;
+	width: 300px;
 	background-color: hsl(0, 94%, 66%);
 	margin-top: 15px;
 	margin-bottom: 50px;
@@ -348,8 +375,13 @@ h2 {
 	justify-content: space-evenly;
 	align-items: center;
 	width: 40%;
+	max-width: 150px;
 	margin-top: 40px;
 	margin-bottom: 30px;
+}
+
+.socialLogo {
+	cursor: pointer;
 }
 
 .modal-overlay {
@@ -420,7 +452,6 @@ h2 {
 .backgroundElement.modalBackground {
 	position: absolute;
 	z-index: 1;
-	height: 100px;
 }
 
 .modalText {
@@ -446,7 +477,6 @@ h2 {
 }
 
 .modalOption {
-	/* font-size: 0.75rem; */
 	width: 100%;
 }
 
@@ -533,4 +563,349 @@ h2 {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 50px;
+}
+
+.desktopNavContainer {
+	display: none;
+}
+
+.footerContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.cardsContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+}
+
+.newsletter > h2 {
+	width: 70%;
+}
+
+.cartButton:hover,
+button:hover {
+	background-color: white;
+	color: hsl(231, 69%, 60%);
+}
+
+.option:hover {
+	color: hsl(0, 94%, 66%);
+}
+
+.newsBtn:hover {
+	color: hsl(0, 94%, 66%);
+}
+
+.footerLink:hover {
+	color: hsl(0, 94%, 66%);
+}
+
+/* ------------------------------------------------------------------- */
+@media (min-width: 1000px) {
+	.wrapper {
+		padding: 40px 90px;
+	}
+
+	.desktopNavContainer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 45%;
+		font-size: 1.3rem;
+	}
+
+	.burgerBtn {
+		display: none;
+	}
+
+	.desktopNavBtn {
+		width: 25%;
+		min-width: 100px;
+		padding: 10px;
+		background-color: hsl(0, 94%, 66%);
+		border: 3px solid hsl(0, 94%, 66%);
+		transition: backgroundColor 0.3s, color 0.3s;
+	}
+
+	.desktopNavBtn:hover {
+		background-color: white;
+		color: hsl(0, 94%, 66%);
+	}
+
+	.desktopNavEl {
+		cursor: pointer;
+		transition: color 0.3s;
+	}
+
+	.desktopNavEl:hover {
+		color: hsl(0, 94%, 66%);
+	}
+
+	.headerSection {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding-left: 50px;
+	}
+
+	.bookmarkManager {
+		order: 1;
+		width: 60%;
+	}
+
+	.heroImage {
+		order: 2;
+	}
+
+	.bookmarkManager > .text,
+	.bookmarkManager > .title {
+		text-align: left;
+	}
+
+	.bookmarkManager > .title {
+		font-size: 3rem;
+	}
+
+	.backgroundElement {
+		height: 250px;
+		border-bottom-left-radius: 150px;
+		left: 89%;
+		top: 70%;
+	}
+
+	.img {
+		max-width: 500px;
+		left: 60%;
+	}
+
+	.navigation {
+		margin-bottom: 60px;
+		padding: 0 50px;
+	}
+
+	button {
+		width: 40%;
+		margin-right: 10px;
+		max-width: 150px;
+		min-width: 140px;
+	}
+	.buttonSection {
+		justify-content: start;
+	}
+
+	.feature {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.text,
+	.questionsAccordion {
+		width: 40%;
+	}
+
+	.bookmarkManager > .text,
+	.bookmarkSectionText > .text {
+		width: 100%;
+	}
+	.options {
+		flex-direction: row;
+		width: 60%;
+	}
+
+	.options.flex-column .option {
+		border-top: none;
+	}
+
+	.option.active::after {
+		width: 100%;
+		left: 0;
+		bottom: -10px;
+	}
+
+	.option {
+		margin-bottom: 10px;
+		cursor: pointer;
+		transition: color 0.3s;
+	}
+
+	.bookmarkSection {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		margin-top: 50px;
+	}
+
+	.bookmarkSectionText {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		order: 2;
+		width: 60%;
+	}
+
+	.bookmarkSectionText > h2,
+	.bookmarkSectionText > .text {
+		text-align: left;
+	}
+
+	.bookmarkSectionText > h2 {
+		margin: 0;
+	}
+
+	.bookmarkSectionText > button {
+		width: 20%;
+		min-width: 100px;
+		max-width: 125px;
+	}
+
+	.bookmarkImage {
+		order: 1;
+		left: 0;
+	}
+
+	.rotated {
+		height: 300px;
+		top: 75%;
+		left: 10%;
+		width: 150%;
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 100px;
+	}
+
+	.bookmarkSection > .heroImage {
+		left: -10%;
+	}
+
+	.extension {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		margin-top: 200px;
+	}
+
+	.extension > .text {
+		width: 45%;
+	}
+
+	.cardsContainer {
+		display: flex;
+		flex-direction: row;
+		margin-top: 50px;
+		height: 450px;
+	}
+	.cart {
+		height: 300px;
+	}
+	.cart:nth-child(1) {
+		align-self: flex-start;
+	}
+	.cart:nth-child(2) {
+		align-self: center;
+	}
+	.cart:nth-child(3) {
+		align-self: flex-end;
+	}
+
+	.cartButton {
+		margin-right: 0;
+		border: 3px solid hsl(231, 69%, 60%);
+		max-width: 500px;
+		transition: background-color 0.3s, color 0.3s;
+	}
+	.cart {
+		max-width: 250px;
+	}
+
+	.newsletter > h2 {
+		width: 25%;
+		letter-spacing: 0.2rem;
+	}
+
+	.form {
+		align-items: flex-start;
+		width: 35%;
+		flex-direction: row;
+		margin-bottom: 20px;
+	}
+
+	.newsBtn {
+		margin: 0;
+		border: 3px solid hsl(0, 94%, 66%);
+		transition: color 0.3s;
+		margin-left: 10px;
+		min-width: 75px;
+		max-width: 100px;
+	}
+
+	.counter {
+		font-size: 1rem;
+	}
+	.input {
+		font-size: 1.25rem;
+		padding: 12px;
+	}
+
+	.footer {
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 20px 90px;
+		font-size: 1.2rem;
+	}
+
+	.footerLogo {
+		margin: 0;
+
+		max-width: 150px;
+		margin: 0px 40px;
+	}
+	.footerLink {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0px 25px;
+		cursor: pointer;
+		transition: color 0.3s;
+	}
+
+	.footerContainer {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.socials {
+		width: 15%;
+		margin: 0;
+	}
+}
+
+@media (min-width: 610px) {
+	.backgroundElement {
+		left: 90%;
+	}
+
+	.rotated {
+		top: 75%;
+		left: 0%;
+		width: 150%;
+	}
+}
+
+@media (min-width: 850px) {
+	.rotated {
+		left: 5%;
+	}
+
+	.menuContainer {
+		padding: 50px;
+	}
 }
