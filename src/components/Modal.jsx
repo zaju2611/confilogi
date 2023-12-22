@@ -17,7 +17,7 @@ const Modal = ({ isOpen, onClose }) => {
 					onClick={onClose}
 				/>
 
-				<Options flexDirection="flex-row" className="modalOptions" />
+				<Options option={2} flexDirection="flex-row" className="modalOptions" />
 				<div className="modalContent">
 					<div className="modalImage">
 						<img className="imgModal" src={Image} alt="modal illustration" />

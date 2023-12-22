@@ -1037,3 +1037,13 @@ button:hover {
 		padding: 50px;
 	}
 }
+
+@media (max-width: 360px) {
+	.modal > .options > .optionContainer > .option {
+		font-size: 0.75rem;
+	}
+
+	.modalContent > .modalImage > .imgModal {
+		max-width: 170px;
+	}
+}

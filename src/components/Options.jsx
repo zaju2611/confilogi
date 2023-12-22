@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Option from "./Option";
 
-export default function Options({ flexDirection }) {
-	const [activeOption, setActiveOption] = useState(1);
+export default function Options({ flexDirection, option }) {
+	const [activeOption, setActiveOption] = useState(option);
 
 	const handleOptionClick = (optionId) => {
 		setActiveOption(optionId);
